@@ -7,7 +7,7 @@ The front end is developed using Python's Flaskvmicroframework and ML model is a
 
 For the demonstartion purpose , I've chosen three genre - DRAMA,ACTION,THRILLER
 
-Intially the images are classified using the ml model and stored in their respective csv files. Eg. The images to be displayed in books category is classifed and the images score for the three genre is stored in book.csv .
+Intially the images are classified using the ml model (ml.py uses tensorflow backend)  and stored in their respective csv files. Eg. The images to be displayed in books category is classifed and the images score for the three genre is stored in book.csv .
  
  The users.csv contains the score of prefered genre of each user.
 
