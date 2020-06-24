@@ -13,13 +13,15 @@ Intially the images are classified using the ml model and stored in their respec
 
 File hierarchy:
 static
-  |_images
-  |_css
-  |_env
+  |_images_
+  |_css_
+  |_env_
 app.py
 book.csv
 magazine.csv
 users.csv
+
+# Newspaper
 
 ![URL](https://github.com/Haririthanya/ACMS-Project/blob/master/url.png) 
 
@@ -27,6 +29,12 @@ Once this is entered you can see the newspaper page.
 
 ![Newspaper](https://github.com/Haririthanya/ACMS-Project/blob/master/newspaper.png)
 
-## Changing the user id to u002 will display another image which is based on the user preference.
+## Changing the user id to u004 will display another image which is based on the user preference.
 
-![Newspaper-another user]()
+![Newspaper-another user](https://github.com/Haririthanya/ACMS-Project/blob/master/newspaper2.png)
+
+Moving on to checking the books category, Here I have chosen two books - The DaVinci Code and The Famous Five.
+Each book has 4 images.
+
+# Books
+
