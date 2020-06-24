@@ -25,4 +25,8 @@ users.csv
 
 Once this is entered you can see the newspaper page.
 
-![Newspaper]()
+![Newspaper](https://github.com/Haririthanya/ACMS-Project/blob/master/newspaper.png)
+
+## Changing the user id to u002 will display another image which is based on the user preference.
+
+![Newspaper-another user]()
