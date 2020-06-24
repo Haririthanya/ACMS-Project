@@ -1,0 +1,166 @@
+{% extends "layout.html" %}
+{% block head %}
+    <title>Newspaper</title>
+    <link rel="stylesheet" href="static/css/news.css">
+  {% endblock %}    
+  {% block body %}
+    <div class="main-container">
+        <!--First Navigation Bar-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" id="firstNav">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapse_target">
+            <a class="navbar-brand" href="#"><img src="static/Amazon.png" alt=""></a>
+            <ul class="navbar-nav">
+             
+              <form class="form-inline" id="searchform">
+                <li class="nav-item dropdown" id="dropdown-sub">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#dropdown_target">Subscription Boxes
+                      <span class="caret"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown_target" >
+                      <a class="dropdown-item">DropDown1</a>
+                      <a class="dropdown-item">DropDown2</a>
+                      <a class="dropdown-item">DropDown3</a>
+                    </div>
+                  </li>
+                <input type="search" class="form-control" aria-labelledby="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#dropdown_target" href="#">Hello,Sign In<br><b>Account & Lists</b>
+                  <span class="caret"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdown_target" >
+                  <a class="">YourLists</a>
+                  <a class="dropdown-item">Create a wish List</a>
+                  <a class="dropdown-item">Find a Wish List</a>
+                  <a class="dropdown-item">Wish from Any Website</a>
+                  <a class="dropdown-item">Baby Wish List</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <small>Returns</small><br><b>&Orders</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <br> Try Prime</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <br> Cart</a>
+              </li>
+            </ul>
+          </div>
+          </nav>
+        <!--First Navigation Bar-->
+        <!--Second Navigation Bar-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="secondNav">
+
+            <a class="navbar-brand" href="#"><small>Deliver to</small><br><small>India</small></a>
+            <ul class="navbar-nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <small> Mobiles </small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <small> Best Sellers</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small> Pantry </small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small> Computers</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small> Amazon Pay</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small> New Releases</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small> Books</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small> Customer Service</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small> Sell</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small> Gift Ideas</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small> Baby</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small> AmazonBasics</small></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><small> Coupons</small></a>
+              </li>
+            </ul>
+          </nav>
+        <!--Second Navigation Bar-->
+        <!--Third Navigation Bar-->
+            <nav class="nav nav-pills nav-fill navbar-dark bg-dark" id="thirdNav">
+                <a class="nav-item nav-link" >Subscription Boxes</a>
+                <a class="nav-item nav-link" >Beauty</a>
+                <a class="nav-item nav-link" >Food & Drink</a>
+                <a class="nav-item nav-link" >Lifestyle</a>
+                <a class="nav-item nav-link" >Pets</a>
+                <a class="nav-item nav-link" >Toys & Kids</a>
+                <a class="nav-item nav-link" >Manage</a>
+                <a class="nav-item nav-link" >Sell</a>
+            </nav>
+        <!--Third Navigation Bar-->
+        <!--Post title-->
+            <div class="post-title">
+                <h3>The Washington Post Digital Access</h3>
+                <small>Sold by Washington Post</small>
+            </div>
+            <div class="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+        <!--Post title-->
+        <!--Carousel-->
+            <div class="carousel-container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+      
+                    <div class="carousel-inner" role="listbox">
+                      {% for image in imgsrc %}
+                      {% if loop.index==1 %}
+                      {% set classLabel = 'carousel-item active' %}
+                      {% else %}
+                      {% set classLabel = 'carousel-item' %}
+                      {% endif %}
+                      <div class="{{ classLabel }}">
+                        <img src="{{ image }}" alt="" height="400">
+                      </div>
+                      {% endfor %}
+                    </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                </div>
+            </div>
+        <!--Carousel-->
+        <!--Post Para-->
+        <div class="post-para">
+          <h3>The Washington Post Digital Access</h3>
+          <small>Your Basic Digital subscription to The Washington Post includes access to all website content and all Washington Post apps. <br>Enjoy expert reporting and analysis from Washington and around the world.</small>
+          <br>
+          <h3>Subscribe with Confidence</h3>
+          <small>Amazon will be your first point of contact for customer support, and we won’t share your credit card information with anyone else. <br>Subscribe with peace of mind that you are in control.</small>
+      </div>
+        <!--Post Para-->
+    </div>
+{% endblock %}

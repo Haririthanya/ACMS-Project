@@ -1,0 +1,76 @@
+.main-container{
+  position: relative;
+}
+  .navbar{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .star{
+    position: absolute;
+    margin-left: 5%;
+  }
+  .checked{
+    color: orange;
+  }
+  .dropdown-menu{
+      background-color: rgba(255, 255, 255, 0.899) !important;
+      outline:none;
+      border:none;
+  }
+  #searchform input[type=search] {
+    width:600px !important;
+  }
+  #logo{
+    width: 100px;
+  }
+  .navbar.center .navbar-inner {
+    text-align: center !important;
+  }
+ .navbar.center .navbar-inner .nav {
+    float: none !important;
+    display:inline-block !important;
+    vertical-align: middle !important;
+  }
+  .btn.btn-success {
+    background-color: #ff9900;
+    color: #333333;
+    border: none;
+  }
+  #firstNav{
+    background-color: #111111 !important; 
+  }
+  #thirdNav{
+      background-color: #ffffff !important; 
+      border-bottom: 0.5px solid #2d1d2d;
+  }
+  .carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #dropdown-sub{
+      background-color: gray;
+      border-radius: 5px;
+      color: black;
+  }
+  .post-title{
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+  .carousel-container{
+      position: absolute;
+      width: 40%;
+      left: 5%;
+      height: 170%;
+      top: 120%;
+  }
+  .post-para{
+      position: absolute;
+      margin-left: 5%;
+      margin-right: 5%;
+      top: 300%;
+  }

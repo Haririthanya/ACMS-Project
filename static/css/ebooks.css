@@ -1,0 +1,78 @@
+.main-container{
+  position: relative;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+#card-decks {
+  position: absolute;
+  bottom: 150px;
+  left: 200px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.star{
+    position: absolute;
+    margin-left: 5%;
+  }
+  .checked{
+    color: orange;
+  }
+  .card{
+    height: 400px !important;
+    width: 300px !important;
+  }
+  .navbar{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .dropdown-menu{
+      background-color: rgba(255, 255, 255, 0.899) !important;
+      outline:none;
+      border:none;
+  }
+  #searchform input[type=search] {
+    width:600px !important;
+  }
+  #logo{
+    width: 100px;
+  }
+  .navbar.center .navbar-inner {
+    text-align: center !important;
+  }
+ .navbar.center .navbar-inner .nav {
+    float: none !important;
+    display:inline-block !important;
+    vertical-align: middle !important;
+  }
+  .btn.btn-success {
+    background-color: #ff9900;
+    color: #333333;
+    border: none;
+  }
+  #firstNav{
+    background-color: #111111 !important; 
+  }
+  .carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .content-container{
+    position: absolute;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .star{
+    position: absolute;
+    margin-left: 5%;
+  }
+  .checked{
+    color: orange;
+  }
