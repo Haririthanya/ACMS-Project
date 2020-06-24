@@ -39,7 +39,7 @@ Each book has 4 images.
 # Books
 
 In the same way, we change the url for books.
-![URL](https://github.com/Haririthanya/ACMS-Project/blob/master/book%url.png)
+![URL](https://github.com/Haririthanya/ACMS-Project/blob/master/book%20url.png)
 
 Here u004 is chosen
 ![Book](https://github.com/Haririthanya/ACMS-Project/blob/master/book.png)
